@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int num(int a, int b)
+{
+    if(a>b)
+    {
+        cout<<a<<" is greater and "<<b<<" is smaller";
+    }
+    else
+    {
+        cout<<b<<" is greater and "<<a<<" is smaller";
+    }
+    return 0;
+}
+int main() {
+    // Write C++ code here
+    int num1, num2,p;
+    cout << "Enter a number"<<endl;
+    cin>>num1;
+    cout << "Enter a number"<<endl;
+    cin>>num2;
+    p=num(num1,num2);
+    return 0;
+
+}
