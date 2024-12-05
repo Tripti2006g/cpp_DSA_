@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int square(int s)
+{
+    int sq=s*s;
+    return sq;
+}
+int main()
+{
+    int s,a;
+    cout<<"enter a no. to find square"<<endl;
+    cin>>s;
+    a=square(s);
+    cout<<a;
+    
+    return 0;
+}
