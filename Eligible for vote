@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int age,i;
+    cout<<"entre age"<<endl;
+    cin>>age;
+    cout<<"if you are citizen of India press 1";
+    cout<<" else press 0"<<endl;
+    cin>>i;
+    
+   
+    {
+        if(age>=18 && i==1)
+        cout<<"eligible for vote"<<endl;
+        else
+    cout<<"not eligible"<<endl;
+    }
+    return 0;
+}
