@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void insert(int arr[],int k,int &N,int ITEM){
+    int j=N;
+    while(j>=k){
+        arr[j+1]=arr[j];
+        j--;
+    }
+    arr[k]=ITEM;
+    N=N+1;
+}
+
+int main() {
+    // Writint e C++ code here
+    int n=4;
+    int arr[5]={1,2,3,4};
+    int k=2;
+    int ITEM=345;
+    insert(arr,k,n,ITEM);
+    
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<endl;
+    }
+
+    return 0;
+}
