@@ -1,0 +1,24 @@
+#include <iostream>
+#include<cstring>
+using namespace std;
+void len (char *string){
+    int i,len,temp;
+    len=strlen(string);
+    for(i=0;i<len/2;i++){
+        temp=string[i];
+        string[i] = string[len - i - 1];
+        string[len - i - 1] = temp;
+    }
+    
+}
+int main()
+{
+    
+    char string[50] = "tripti";
+    cout << "Before reversing the string: " << string;
+
+    //strreverse(string);
+    len (string);
+    cout<< "\nAfter reversing the string: " << string;
+    return 0;
+}
